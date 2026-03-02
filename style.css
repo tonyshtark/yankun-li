@@ -21,6 +21,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.65;
+  cursor: url('self.jpeg') 16 16, auto;
 }
 
 /* ── NAV ── */
