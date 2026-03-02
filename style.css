@@ -194,7 +194,7 @@ section { scroll-margin-top: 60px; }
   margin-top: 0.5rem;
 }
 
-/* ── COPY BUTTON (phone / email) ── */
+/* ── COPY BUTTON (phone / email) – matches .contact-links a ── */
 .contact-copy {
   background: none;
   border: 1px solid rgba(255,255,255,0.35);
@@ -202,35 +202,16 @@ section { scroll-margin-top: 60px; }
   color: rgba(255,255,255,0.9);
   font-size: 0.9rem;
   font-family: inherit;
+  font-weight: 400;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.35rem;
   padding: 0.35rem 0.9rem;
   transition: background 0.2s;
+  text-decoration: none;
 }
 .contact-copy:hover { background: rgba(255,255,255,0.15); }
-
-/* ── TOAST ── */
-#toast {
-  position: fixed;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%) translateY(1rem);
-  background: #1e293b;
-  color: #fff;
-  font-size: 0.85rem;
-  padding: 0.5rem 1.2rem;
-  border-radius: 999px;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s, transform 0.25s;
-  z-index: 999;
-}
-#toast.show {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
-}
 
 /* ── CARD FOOTER (tags + github link row) ── */
 .card-footer {

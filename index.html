@@ -8,16 +8,9 @@
 </head>
 <body>
 
-<!-- Copy toast -->
-<div id="toast">Copied!</div>
-
 <script>
   function copyText(text) {
-    navigator.clipboard.writeText(text).then(function () {
-      var toast = document.getElementById('toast');
-      toast.classList.add('show');
-      setTimeout(function () { toast.classList.remove('show'); }, 1800);
-    });
+    navigator.clipboard.writeText(text);
   }
 </script>
 
